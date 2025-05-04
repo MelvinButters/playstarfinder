@@ -3,70 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>Starfinder Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      color: #c5c6c7;
-      background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80');
+      font-family: 'Orbitron', sans-serif;
+      color: #cddfff;
+      background-image: url('https://images.unsplash.com/photo-1447433819943-74a20887a524?auto=format&fit=crop&w=1920&q=80');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
-      backdrop-filter: brightness(0.5);
+      background-color: #000;
     }
 
     .container {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 2rem;
+      background-color: rgba(0, 0, 20, 0.85);
+      padding: 3rem 2rem;
       min-height: 100vh;
       text-align: center;
     }
 
     h1 {
-      font-size: 3rem;
-      color: #1e90ff;
-      text-shadow: 0 0 10px #00bfff, 0 0 20px #1e90ff;
-      letter-spacing: 2px;
+      font-size: 3.2rem;
+      color: #00ccff;
+      text-shadow: 0 0 10px #00ffff, 0 0 25px #0077ff;
       margin-bottom: 0.5rem;
+      letter-spacing: 3px;
     }
 
-    p.subtitle {
-      color: #aaa;
-      margin-bottom: 2rem;
+    .subtitle {
       font-size: 1.2rem;
+      color: #88aaff;
+      margin-bottom: 2rem;
     }
 
     ul {
       list-style: none;
       padding: 0;
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
     }
 
     li {
+      background: linear-gradient(to bottom right, #1b1f3b, #101326);
       margin: 2rem 0;
-      background-color: rgba(31, 40, 51, 0.85);
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(102, 252, 241, 0.1);
+      padding: 1.5rem;
+      border: 2px solid #00ccff44;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ccff33;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    li:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px #00ccff77;
     }
 
     a {
-      color: #45a29e;
-      font-size: 1.3rem;
+      color: #00ffff;
+      font-size: 1.4rem;
       text-decoration: none;
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
     a:hover {
-      color: #66fcf1;
+      color: #ffffff;
+      text-shadow: 0 0 8px #00ffff;
     }
 
-    p.description {
-      margin: 0;
+    .description {
       font-size: 1rem;
+      color: #aaccee;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      a {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
@@ -77,27 +95,27 @@
     <ul>
       <li>
         <a href="https://paizo.com/starfinder" target="_blank">Official Starfinder Page (Paizo)</a>
-        <p class="description">The main hub for Starfinder content, including books, rules, news, and updates directly from the creators.</p>
+        <p class="description">The core site for Starfinder books, rules, updates, and news direct from Paizo.</p>
       </li>
       <li>
         <a href="https://forums.paizo.com/c/starfinder" target="_blank">Starfinder Forums (Paizo)</a>
-        <p class="description">Join discussions, ask questions, and connect with players and GMs on Paizo's official forums.</p>
+        <p class="description">Connect with the community, ask questions, and browse discussions with players and GMs.</p>
       </li>
       <li>
         <a href="https://www.reddit.com/r/starfinder_rpg/" target="_blank">Reddit: r/Starfinder_RPG</a>
-        <p class="description">A lively community for sharing ideas, rules questions, homebrew, and game stories.</p>
+        <p class="description">Share game stories, get help, or post your homebrew content on this active subreddit.</p>
       </li>
       <li>
         <a href="https://starjammersrd.com/" target="_blank">Starjammer SRD</a>
-        <p class="description">A third-party rules resource with an extended SRD, alternate classes, and content for deeper gameplay.</p>
+        <p class="description">A third-party rules expansion and online SRD for extended and custom Starfinder content.</p>
       </li>
       <li>
         <a href="https://www.starfindersociety.org/" target="_blank">Starfinder Society</a>
-        <p class="description">Join Paizo’s official organized play program: create characters, play missions, and build your reputation across the galaxy.</p>
+        <p class="description">Play official adventures, earn boons, and track your character in Paizo’s organized play system.</p>
       </li>
       <li>
         <a href="https://discord.gg/starfinder" target="_blank">Starfinder Discord Server</a>
-        <p class="description">Live chat with players and GMs, find online games, get quick rules help, and talk all things Starfinder.</p>
+        <p class="description">A live space for chatting, LFG, campaign ideas, and general Starfinder discussion.</p>
       </li>
     </ul>
   </div>
